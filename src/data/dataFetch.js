@@ -8,14 +8,14 @@ export default function DataFetch () {
         fetch('https://rickandmortyapi.com/api/episode')
             .then(value => value.json())
             .then(value => {
-                setUsers(value);
+                setUsers(value.results);
             })
     }, [])
 
 
     return(
         <div>
-            {users.map((value, index) => <Builder users={value} key={index}/>)}
+            {users.map(value => <Builder item={value}/>)}
         </div>
     )
 }
