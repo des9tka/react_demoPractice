@@ -1,24 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import {data} from './data/data'
+import ShowDataId from './components/ShowF'
+import TestFunction from "./components/testFunction";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+       {data.map((value, index) => <TestFunction value={value} key={index}/>)}
+   </div>
   );
 }
 
