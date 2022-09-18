@@ -1,5 +1,6 @@
 import './App.css';
-import DataFetch from "./data/dataFetch";
+import DataFetch from "./data/DataFetch";
+import episodeCss from './css/episodeCss.css'
 
 
 function App() {

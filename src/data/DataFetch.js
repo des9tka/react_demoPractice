@@ -14,7 +14,7 @@ export default function DataFetch () {
 
 
     return(
-        <div>
+        <div className={'mainDiv'}>
             {users.map(value => <Builder item={value}/>)}
         </div>
     )

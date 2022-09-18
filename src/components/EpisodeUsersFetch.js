@@ -15,7 +15,7 @@ export default function EpisodeUsersFetch (props) {
 
     return(
         <div>
-            {console.log(char)}
+            <CharConstructor item={char}/>
         </div>
     )
 }
